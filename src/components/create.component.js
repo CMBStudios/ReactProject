@@ -1,3 +1,5 @@
+// create.component.js
+
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -51,7 +53,7 @@ export default class Create extends Component {
   render() {
     return (
         <div style={{ marginTop: 10 }}>
-            <h3 align="center">Add New Business</h3>
+            <h3>Add New Business</h3>
             <form onSubmit={this.onSubmit}>
                 <div className="form-group">
                     <label>Person Name:  </label>
@@ -79,9 +81,7 @@ export default class Create extends Component {
                       />
                 </div>
                 <div className="form-group">
-                    <input type="submit" 
-                      value="Register Business" 
-                      className="btn btn-primary"/>
+                    <input type="submit" value="Register Business" className="btn btn-primary"/>
                 </div>
             </form>
         </div>
